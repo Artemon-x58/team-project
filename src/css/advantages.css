@@ -1,0 +1,51 @@
+:root {
+  --white-color: #ffffff;
+  --main-color: #111111;
+  --accent-color: #fd9222;
+  --background-color: #1e1823;
+  --hover-background-color-btn: #fcf1e0;
+  --trans: 250ms linear;
+  --cirkle-svg: rgb(255, 255, 255, 0.7);
+}
+
+/* БАКГРАУНД */
+
+.adv-color-wallp {
+  background-color: var(--background-color);
+}
+
+/* СВГ */
+
+.adv-cirkle {
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+
+  border: 1px solid var(--cirkle-svg);
+  background-color: var(--background-color);
+}
+
+.adv-picture {
+  /* stroke: var(--accent-color); */
+  fill: var(--accent-color);
+}
+
+/* ЗАГОЛОВОК */
+
+.adv-zagolovok {
+  color: var(--white-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+/* ТЕКСТ */
+
+.adv-text {
+  color: var(--cirkle-svg);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+}
