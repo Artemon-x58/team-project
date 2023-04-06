@@ -4,6 +4,7 @@
   --accent-color: ##fd9222;
   --background-color: #1e1823;
   --hover-background-color-btn: #fcf1e0;
+  --trans: 250ms linear;
 }
 
 /* Reset styles */
