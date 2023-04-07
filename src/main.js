@@ -1,6 +1,3 @@
 import './js/mobile-menu'
-import './js/buy-now-modal'
-import './js/subscribe-modal'
-import './js/our-products-slider'
-import './js/reviews-modal'
-import './js/rewiews-slider'
+import './js/modals'
+
