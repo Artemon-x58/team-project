@@ -53,7 +53,6 @@
             </li>
         </ul>
         <button class="reviews-open-btn" type="button">Leave a review</button>
-        </button>
         <div class="reviews-modal is-hidden">
             <button class="reviews-close-btn" type="button" data-modal-close>
                 <svg class="reviews-close-btn-ikon">
@@ -64,25 +63,25 @@
             <form class="reviews-modal-form">
                 <!-- я прописал label для читалки, а само название скрыл, как на макете. Я не знаю, будет ли она считыва название из placeholder. Если неправиьно, поправь, я исправлю, убрав label. -->
                 <label class="reviews-modal-input-wrap"><span class="hidden">Name</span>
-                    <!-- в макете дизайнером не указано обязательное заполнение, но я сделал небольшую валидацию в Имени (т.к сайт англоязычный, я проставил английские литеры)и телефоне, вроде как это есть в ТЗ. Если не надо -- уберу-->
+                    <!-- в макете дизайнером не указано обязательное заполнение, но я сделал небольшую валидацию в Имени (т.к сайт англоязычный, я проставил английские литеры)и телефоне, вроде как это есть в ТЗ. Если не надо - уберу-->
                     <input class="reviews-modal-input" name="user-name" type="text" required minlength="2"
                         pattern="^[a-zA-Z]+$" placeholder="Name">
                 </label>
-                <label class="reviews-modal-input-wrap"><span class="hidden">Email</span>
-                    <input class=" reviews-modal-input reviews-mobil" name="user-email" type="email"
-                        placeholder="Enter your email">
+                <label class="reviews-modal-input-wrap reviews-mobil"><span class="hidden">Email</span>
+                    <input class=" reviews-modal-input" name="user-email" type="email" placeholder="Enter your email">
+                </label>
+                <label class="reviews-modal-input-wrap reviews-tablet"><span class="hidden">Email</span>
                     <!-- придется идти через max-width: 780px или переговорить с Юлей по поводу текста в mobil. Может ошибочно его отличие от текста в tablet и desktop?-->
-                    <input class=" reviews-modal-input reviews-tablet" name="user-email" type="email"
-                        placeholder="Email">
+                    <input class=" reviews-modal-input" name="user-email" type="email" placeholder="Email">
                 </label>
                 <label class="reviews-modal-input-wrap"><span class="hidden">Phone</span>
-                    <div class="reviews-code-country">
+                    <span class="reviews-code-country">
                         <svg class="reviews-modal-ikon-flag">
                             <use href="../img/icons/icons.svg#icon-flag"></use>
                         </svg>
                         <span class="reviews-code-country-numeric">+380
                         </span>
-                    </div>
+                    </span>
                     <input class="reviews-modal-input phone" name="user-phone" type="tel" required
                         pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xx-xx" placeholder="Phone number">
                 </label>
