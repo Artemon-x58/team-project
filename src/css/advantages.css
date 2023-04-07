@@ -1,0 +1,71 @@
+/* :root {
+  --white-color: #ffffff;
+  --main-color: #111111;
+  --accent-color: #fd9222;
+  --background-color: #1e1823;
+  --hover-background-color-btn: #fcf1e0;
+  --trans: 250ms linear;
+} */
+
+/* БАКГРАУНД */
+
+.adv-color-wallp {
+  background-color: var(--background-color);
+}
+
+/* СВГ */
+
+.adv-cirkle {
+  /* ФОРМА ЦВЕТ РАЗМЕР */
+
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  border: 1px solid rgb(255, 255, 255, 0.7);
+  background-color: var(--background-color);
+
+  /* ОТСТУПЫ */
+
+  margin: 20px 0 22px 0;
+
+  /* ЦЕНТРОВКА */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adv-picture {
+  fill: var(--accent-color);
+
+  /* ЦЕНТРОВКА */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ЗАГОЛОВОК */
+
+.adv-zagolovok {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+
+  margin-bottom: 18px;
+}
+
+/* ТЕКСТ */
+
+.adv-text {
+  color: rgb(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.21;
+
+  /* ГРАНИЦЫ ТЕКСТА */
+  max-width: 308px;
+}
+
+.adv-text:last-child {
+  margin-bottom: 36px;
+}
