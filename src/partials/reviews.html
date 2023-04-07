@@ -1,0 +1,145 @@
+<!-- Артем, смотри, что я предлагаю,
+в base вынесим общую title, в которой прописать:
+
+.title {
+font-weight: 600; (можно не писать, по-моему в h2 этот параметр по умолчанию, проверь)
+font-size: 24px;
+line-height: 1.17;
+text-align: center;
+Letter spacing: -0.03em;
+text-transform: uppercase;
+
+
+.title span {
+color: var{--accent-color}; 
+
+
+&nbsp -- пробел, не забываем!
+}
+
+кому необходимо, как мне, например, дополняем по названию секции: reviews-title
+} -->
+<section class="reviews section">
+    <div class="container">
+        <h2 class="reviews-title title" id="chocolate-is-loved"><span>chocolate&nbsp;</span> is loved</h2>
+        <!-- я не стал список делать посыланиями/карточками, если неверно понял, напиши, я исправлю) -->
+        <ul class="reviews-list">
+            <li class="reviews-item">
+                <img class="reviews-photo" srcset="../img/reviews/victoria-d@2x.jpg 2x"
+                    src="../img/reviews/victoria-d.jpg" alt="Victoria Dobrzhanska photo" width="80" height="80">
+                <!-- предложение в base дополнить fontы
+                line-height: 1.29;
+                letter-spacing: -0.02em;
+            тогда не надо будет это прописывать в основном тексте р-шек, только мне с Женей надо будет добавить прозрачность (кстати, он может скопировать мой класс, тогда я уберу уточнение "reviews-"), а другим перебить при перезаливке цвета-->
+                <h3 class="subtitle">"Victoria Dobrzhanska</h3>
+                <!-- предлагаю с h3 поступить также, как и с h2, вынести его в body. Если нет, отпиши, я приставлю reviews-
+                .subtitle {
+                    font-weight: 600; (можно не писать, по-моему в h3 этот параметр по умолчанию, проверь)
+                    font-size: 18px;
+                    line-height: 1.33px;
+                    text-align: center;
+
+                    Кому необходимо допишут в дополнительном классе text-transform: uppercase;
+                }
+             -->
+                <p class="reviews-description-text">I love this chocolate bar. Perfect combination of light crispy
+                    wafer, covered in a thin layer chocolate.
+                </p>
+            </li>
+            <li class="reviews-item">
+                <img class="reviews-photo" srcset="../img/reviews/nazar-b@2x.jpg 2x" src="../img/reviews/nazar-b.jpg"
+                    alt="Nazar Babenko photo" width="80" height="80">
+                <h3 class="subtitle">"Nazar Babenko</h3>
+                <p class="reviews-description-text">This chocolate confection is a delight! A delight! The wafer is
+                    light and crisp, the hazelnut cream is smooth, and the chocolate is good.
+                </p>
+            </li>
+            <li class="reviews-item">
+                <img class="reviews-photo" srcset="../img/reviews/olena-k@2x.jpg 2x" src="../img/reviews/olena-k.jpg"
+                    alt="Olena Kampusch photo" width="80" height="80">
+                <h3 class="subtitle">"Olena Kampusch</h3>
+                <p class="reviews-description-text">Chocolate is a family favourite treat. Love the delicious smooth
+                    chocolate and the creaminess inside. The wafer is soft but crunchy.
+                </p>
+            </li>
+            <li class="reviews-item">
+                <img class="reviews-photo" srcset="../img/reviews/natalia-s@2x.jpg 2x"
+                    src="../img/reviews/natalia-s.jpg" alt="Natalia Sus photo" width="80" height="80">
+                <h3 class="subtitle">"Natalia Sus</h3>
+                <p class="reviews-description-text">The chocolate assortment was delicious. Both dark and milk chocolate
+                    pieces were smooth and just right on the sweetness level.
+                </p>
+            </li>
+            <li class="reviews-item">
+                <img class="reviews-photo" srcset="../img/reviews/danilo-n@2x.jpg 2x" src="../img/reviews/danilo-n.jpg"
+                    alt="Danilo Nottingham photo" width="80" height="80">
+                <h3 class="subtitle">"Danilo Nottingham</h3>
+                <p class="reviews-description-text">This is delicious. It so rich and flavorful you don&rsquo;t need to
+                    use as many. I love topping an apple with almond butter and these chips for a snack.
+                </p>
+            </li>
+            <li class="reviews-item">
+                <img class="reviews-photo" srcset="../img/reviews/irina-t@2x.jpg 2x" src="../img/reviews/irina-t.jpg"
+                    alt="Irina Tydnyuk photo" width="80" height="80">
+                <h3 class="subtitle">"Irina Tydnyuk</h3>
+                <p class="reviews-description-text">This is simply the best chocolate around, and I'm just thrilled to
+                    support a local company! Best local chocolate - world class &#58;&#41;
+                </p>
+            </li>
+        </ul>
+        <!-- можно сделать и так, чтобы браузер сам выбирал фото, которое ему надо в зависимости от дивайса. Это ненамного сложней, просто докачать еще 12 фоток. Зато может дать дополнительных баллы команде. Как считаешь?
+        на примере Irina Tydnyuk:
+        <img srcset="
+        ../img/reviews/irina-t.jpg 80w,
+        ../img/reviews/irina-t@2x.jpg 160w,
+        ../img/reviews/irina-t@2x.jpg 240w,
+        ../img/reviews/irina-t@2x.jpg 320w"
+        src=" ../img/reviews/irina-t.jpg"
+        alt="Irina Tydnyuk photo"
+        sizes="(min-width: 1200px) 33,3vw, (min-width: 768px) 50vw, 100vw">
+        я у себя в ДЗ на команде так сделал.
+     -->
+        <button class="reviews-open-btn" type="button" data-modal-open>Leave a review</button>
+        </button>
+        <!-- я разместил у себя модальное окно. По общему оформлению его потом можно снести вниз, смотри сам. -->
+        <div class="reviews-modal is-hidden" data-modal>
+            <button class="reviews-close-btn" type="button" data-modal-close>
+                <svg class="reviews-close-btn-ikon">
+                    <use href="../img/icons/icons.svg#icon-close"></use>
+                    <!-- иконка есть, просто прозрачная :) -->
+                </svg>
+            </button>
+            <p class="reviews-title title">leave a review abaut&nbsp;<span>our chocolate</span></p>
+            <!-- в принципе перенос можно сделать через <br>, я предлагаю ограничить размерами, на твое усмотрение, сообщи решение -->
+            <form class="reviews-modal-form">
+                <!-- я прописал label для читалки, а само название скрыл, как на макете. Я не знаю, будет ли она считыва название из placeholder. Если неправиьно, поправь, я исправлю, убрав label. -->
+                <label class="reviews-modal-input-wrap"><span class="hidden">Name</span>
+                    <!-- в макете дизайнером не указано обязательное заполнение, но я сделал небольшую валидацию в Имени (т.к сайт англоязычный, я проставил английские литеры)и телефоне, вроде как это есть в ТЗ. Если не надо -- уберу-->
+                    <input class="reviews-modal-input" name="user-name" type="text" required minlength="2"
+                        pattern="^[a-zA-Z]+$" placeholder="Name">
+                </label>
+                <label class="reviews-modal-input-wrap"><span class="hidden">Email</span>
+                    <input class=" reviews-modal-input" name="user-email" type="email" placeholder="Email">
+                    </span>
+                </label>
+                <label class="reviews-modal-input-wrap"><span class="hidden">Phone</span>
+                    <div class="reviews-code-country">
+                        <svg class="reviews-modal-ikon-flag">
+                            <!-- звбыл за флаг Украины. Я добавлю в иконки? Или скинуть тебе ее оптимизированную, а ты сам вставишь в файл? Я в проект его еще на заливал, жду твоего решения-->
+                            <use href="../img/icons/icons.svg#icon-flag"></use>
+                        </svg>
+                        <span class="reviews-code-country-numeric">+380
+                        </span>
+                    </div>
+                    <input class="reviews-modal-input phone" name="user-phone" type="tel" required
+                        pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xx-xx" placeholder="Phone number">
+                </label>
+                <label class="reviews-modal-input-wrap"><span class="hidden">Comment</span>
+                    <textarea class="reviews-modal-input textarea" name="user-comment"
+                        placeholder="Enter text"></textarea>
+                </label>
+                <button class="reviews-submit-modal-btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
