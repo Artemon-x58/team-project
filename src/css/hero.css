@@ -1,0 +1,103 @@
+.hero-section {
+  max-width: 375px;
+  height: 621px;
+  margin: 0 auto;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero-dc/hero_chocolate_mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--white-color);
+  border-radius: 30px;
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero-section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-dc/hero_chocolate_mob@2x.jpg);
+  }
+}
+
+.hero-container {
+  padding-top: 395px;
+}
+.hero-subtitle {
+  width: 290px;
+  height: 72px;
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+
+  color: var(--white-color);
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  margin-bottom: 39px;
+}
+.hero-btn {
+  width: 120px;
+  height: 41px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21px;
+
+  color: var(--white-color);
+  background: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 100px;
+}
+.hero-second-btn {
+  width: 159px;
+  height: 41px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21px;
+
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  border-radius: 100px;
+  background: transparent;
+}
+.hero-scroll {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.hero-scroll-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+
+  color: var(--white-color);
+}
+.hero-scroll-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+  border: 1px solid var(--white-color);
+}
+.hero-scroll-icon {
+  fill: var(--accent-color);
+}
