@@ -1,0 +1,210 @@
+.title-top-seller {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+/* or 120% */
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+margin-bottom: 32px;
+}
+.title-span-sellers{
+    color:var(--accent-color)
+}
+
+.top-sellers-item{
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.top-sellers-item-hidden{
+    visibility: hidden;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 0px;
+    width: 0px;
+}
+.top-seller-discription{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.02em;
+color: var(--main-color);
+}
+.top-sellers-block{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+.buy-top-sellers{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+margin: 0 auto;
+margin-top: 0px;
+padding: 12px 28px;
+gap: 14px;
+min-width: 120px;
+height: 41px;
+background: var(--accent-color);
+border:none;
+border-radius: 100px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14x;
+line-height: 17px;
+color:var(--white-color);
+}
+/* модальное окно */
+.modal-top-sellers{
+    /* display: block; */
+    position: relative;
+    margin: 0 auto;
+    padding: 24px 32px;
+max-width: 311px;
+min-height: 994px;
+background: var(--body-bg);
+border-radius: 15px;
+border-style:double;
+border-color: blue;
+} 
+.modal-top-sellers-close{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+position: absolute;
+/* width: 24px;
+height: 24px; */
+/* padding: 4px; */
+right: 14px;
+top: 14px;
+background: transparent;
+border:none;
+cursor: pointer;
+}
+.close-modal-buynow{
+stroke: black;
+    fill: var(--main-color);
+}
+.label-modal-buynow{
+display: block;
+margin-top: 18px;
+margin-bottom: 8px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: -0.02em;
+color: #000000;
+}
+.modal-buynow-input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 8px;
+    background: #FFFFFF;
+    width: 100%;
+height: 85px;
+border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 15px;
+}
+
+.modal-buynow-discription {
+    display: inline-flex;
+    align-items: center;
+padding: 6px 16px;
+min-width: 70px;
+height: 29px;
+gap: 14px;
+background: #FAFAFA;
+border: 1px solid rgba(17, 17, 17, 0.1);
+border-radius: 100px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+color: var(--main-color);
+
+}
+.modal-top-sellers-list{
+    margin-bottom: 32px;
+}
+
+.modal-submit{
+    margin-left:0px;
+    margin-top: 18px;
+}
+.input-box-buynow{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+   /* max-width: 263px; */
+}
+.buynow-input-svg{
+    
+    display: flex;
+    position: relative;
+flex-direction: row;
+align-items: flex-start;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    padding: 14px 18px 14px 106px;
+width: 100%;
+height: 44px;
+
+border: 1.5px solid rgba(17, 17, 17, 0.05);
+filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+border-radius: 8px;
+}
+.icon-tel-input{
+    position: absolute;
+    top: 22px;
+    left: 18px;
+    transform: translateY(-50%);
+}
+.country-code{
+    position: absolute;
+    top:22px;
+    left: 50px;
+    transform: translateY(-50%);
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+
+letter-spacing: -0.02em;
+color: #000000;
+
+
+
+}
+.buynow-input{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    padding: 14px 18px;
+width: 100%;
+height: 45px;
+
+border: 1.5px solid rgba(17, 17, 17, 0.05);
+filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+border-radius: 8px;
+}
+.buynow-comment {
+    width: 100%;
+    height: 91px;
+    resize: none;
+}
