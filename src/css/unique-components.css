@@ -1,0 +1,179 @@
+
+.unq-title {
+    margin-bottom: 28px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+}
+.unq-span {
+    color: var(--accent-color);
+}
+.unq-text {
+    margin-bottom: 50px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+.unq-list {
+    display: flex;
+    
+}
+.unq-item {
+    display: flex;
+    margin-right: 19px;
+    position: relative;
+    overflow: hidden;
+    width: 270px;
+    height: 270px;
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+  .unq-item:nth-child(4n){
+    margin-right: 0px; 
+} 
+.unq-cirkle-two{
+    border-radius: 15px;
+    
+    background: var(--white-color);
+    border: 1px solid var(--accent-color);
+}
+.unq-cirkle-three{
+    border-radius: 15px;
+    
+    background: var(--background-color);
+}
+.unq-cirkle-four{
+    border-radius: 15px;
+   
+    background: var(--white-color);
+    border: 1px solid var(--accent-color);
+}
+
+.unq-cirkle {
+
+    
+    border-radius: 15px;
+   
+    background: var(--accent-color);
+    
+}
+
+
+.unq-img {
+    margin-top: 28px;
+    margin-right: 36px;
+    margin-bottom: 36px;
+    margin-left: 28px;
+color: var(--accent-color);
+}
+.unq-text-img{
+    margin-bottom: 28px;
+    margin-left: 28px;
+    color: var(--white-color);
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+.unq-text-img-two{
+    margin-bottom: 28px;
+    margin-left: 28px;
+    color: var(--main-color);
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+}
+.unq-animation {
+    padding: 20px 20px;
+    position: absolute;
+    width: 270px;
+    height: 270px;
+top: 0;
+left: 0;
+transform: translateY(100%);
+background: var(--white-color);
+border-radius: 15px;
+opacity: 1;
+transition: transform 250ms;
+transition-timing-function:
+cubic-bezier(0.4, 0, 0.2, 1);
+}
+.unq-item:hover .unq-animation{
+    transform: translateY(0);
+}
+
+.unq-title-two {
+    margin-bottom: 8px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: var(--main-color);
+}
+.unq-btn-animation{
+    display: flex;
+    margin-bottom: 14px;
+}
+.unq-btn {
+    margin-right: 6px;
+    width: 116px;
+    height: 24px;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 16px;
+gap: 4px;
+border: 1px solid var(--accent-color);
+background: var(--accent-color);
+border-radius: 35px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+color: var(--white-color);
+}
+.unq-btn-two {
+    width: 95px;
+    height: 24px;
+    display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 6px 16px;
+gap: 4px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+display: flex;
+align-items: center;
+color: var(--main-color);
+background: var(--boody-bg);
+border: 1px solid var(--accent-color);
+border-radius: 35px;
+}
