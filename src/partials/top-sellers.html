@@ -1,46 +1,52 @@
-<section class="top-sellers">
-    <h2><span>top</span>sellers</h2>
+<section class="top-sellers container">
+    <h2 class="title-top-seller"><span class="title-span-sellers">top</span> sellers</h2>
     <ul class="top-sellers-list">
         <li class="top-sellers-item">
 <img src="./img/top-sellers/image.jpg" alt="chocolate">
-<p class="top-sellers-discription">
+<div class="top-sellers-block"><p class="top-sellers-discription">
     Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. 
     Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
-</p>
+</p></div>
         </li>
         <li class="top-sellers-item">
             <img src="./img/top-sellers/img02.jpg" alt="chocolate">
         </li>
+        <li class="top-sellers-item top-sellers-item-hidden"> 
+            <img src="../img/top-sellers/img01.jpg" alt="chocolate">
+        </li>
     </ul>
     <button type="button" class="buy-top-sellers">
-        buy now
+        Buy now
     </button>
 </section>
 
+<!-- модальное окно -->
 <div class="modal-top-sellers">
-</div>
-<div class="modal-tor-sellers">
     <button class="modal-top-sellers-close" type="button">
 <svg class="close-modal-buynow" width="24" height="24">
-    <use href="/src/img/icons/icons.svg#icon-close">
+    <use href="./img/icons/icons.svg#icon-close">
             </use>
 </svg>
     </button>
-    <h2><span>buy</span>now</h2>
+    <h2 class="title-top-seller"><span class="title-span-sellers">buy</span> now</h2>
     <ul class="modal-top-sellers-list">
         <li class="modal-top-sellers-item">
-            <img class="img-modal-buynow" src="./img/top-sellers/kiss-chocolate-bar-kinder-chocolate-white-nuts.jpg" alt="kind-chhocolate">
-           <p class="modal-buynow-discription">100g</p>
+            <div class="modal-buynow-input">
+                <img class="img-modal-buynow" src="./img/top-sellers/kiss-chocolate-bar-kinder-chocolate-white-nuts.jpg" alt="kind-chhocolate">
+           <p class="modal-buynow-discription">100 g</p></div>
         </li>
         <li class="modal-top-sellers-item">
+            <div class="modal-buynow-input">
             <img class="img-modal-buynow" src="./img/top-sellers/kisspng-chocolate-bar-praline-kinder-chocolate-bonbon-milk.jpg" alt="bonbon-chhocolate">
-            <p class="modal-buynow-discription">200g</p>
+            <p class="modal-buynow-discription">200 g</p></div>
+            </li>
         <li class="modal-top-sellers-item">
-            <img class="img-modal-buynow" src="./img/top-sellers/transparent-chocolate-bar-dark-chocolate-png-free-image.jpg" alt="dark-chhocolate">
-            <p class="modal-buynow-discription">300g</p>
+            <div class="modal-buynow-input">
+                <img class="img-modal-buynow" src="./img/top-sellers/transparent-chocolate-bar-dark-chocolate-png-free-image.jpg" alt="dark-chhocolate">
+            <p class="modal-buynow-discription">300 g</p></div>
         </li>
     </ul>
-
+<!-- форма -->
         <form>
             <label class="label-modal-buynow" for="name">
                 Personal information
@@ -61,12 +67,12 @@
                 Phone number
             </label>
             <div class="input-box-buynow">
-                <input id="tel" class="buynow-input" type="tel" name="tel" placeholder="Phone number">
-           <svg width="24" height="18">
-            <use href="./src/img/icons/icons.svg#icon-vector" ></use>
+                <input id="tel" class="buynow-input-svg" type="tel" name="tel" placeholder="Phone number">
+           <svg class="icon-tel-input" width="24" height="18">
+            <use href="./img/icons/icons.svg#icon-flag" ></use>
 
            </svg>
-           <p>+380</p>
+           <p class="country-code">+380</p>
                 </div>
             
             <label class="label-modal-buynow" for="card">
@@ -78,9 +84,9 @@
             <label class="label-modal-buynow" for="comment">
                 Comment
             </label>
-            <textarea id="comment" class="buynow-comment" name="comment" placeholder="Enter text">
+            <textarea placeholder="Enter text" id="comment" class="buynow-comment" name="comment" >
             </textarea>
-            <button type="button" class="buy-top-sellers">
+            <button type="button" class="buy-top-sellers modal-submit">
                 Submit
             </button>
         </form>
