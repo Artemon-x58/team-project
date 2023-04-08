@@ -4,6 +4,7 @@
   --accent-color: #fd9222;
   --background-color: #1e1823;
   --hover-background-color-btn: #fcf1e0;
+  --boody-bg: #fafafa;
   --trans: 250ms linear;
 }
 
@@ -47,7 +48,7 @@ img {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  background-color: var(--white-color);
+  background-color: var(--boody-bg);
   color: var(--main-color);
 }
 
