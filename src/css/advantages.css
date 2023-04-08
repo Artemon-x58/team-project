@@ -74,6 +74,10 @@
   padding-bottom: 36px;
 }
 
+.adv-linie {
+  visibility: hidden;
+}
+
 /* МЕДИА ПРАВИЛО ДЛЯ ТАБЛЕТКИ................................................................................*/
 
 @media only screen and (min-width: 768px) {
@@ -105,6 +109,10 @@
   .adv-text:last-child {
     padding-bottom: 85px;
   }
+
+  .adv-linie {
+    visibility: hidden;
+  }
 }
 
 /* МЕДИА ПРАВИЛО ДЛЯ ДЕСКТОПА...............................................................................*/
@@ -130,5 +138,6 @@
     right: -18px;
     top: 50%;
     transform: translateY(-50%);
+    visibility: inherit;
   }
 }
