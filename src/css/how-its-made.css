@@ -19,13 +19,25 @@
 .how-made-image {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     border-radius: 15px;
+    
 }
+.how-made-space {
+    position: relative;
+}
+
+/*  */
+
 .how-made-icon {
- fill: #FD9222;
+ fill: #F5f4f4;
  border-radius: 50%;
- border: 1px solid #FD9222;
- width: 35px;
- height: 35px;
+ border: 1px solid #ffffff;
+display: flex;
+position: absolute;
+margin-left: 128px;
+margin-top: -222px;
+
+
+
 }
 .how-made-subtitle {
     font-size: 18px;
@@ -43,13 +55,20 @@ padding: 0px;
 gap: 18px;
   
 }
-.how-made-list::before {
+.how-made-text {
+    position: relative;
+    margin-left: 30px;
+}
+.how-made-text:before {
     content: '';
- position: absolute;
+    position: absolute;
+    top: 5px;
+    left: -12%;
+ display: flex;
 width: 8px;
 height: 8px;
-left: 0px;
-top: 5px;
+border-radius: 50%;
+
 background: #4C4C4C;
 border-color: #4C4C4C;
 
