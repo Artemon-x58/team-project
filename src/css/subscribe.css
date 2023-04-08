@@ -1,0 +1,51 @@
+.subscribe {
+    padding: 72px 366px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe.jpg);
+    background-size: cover;
+}
+
+.subscribe-explore {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+.subscribe-text {
+    font-style: normal;
+    font-weight: 400;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: var(--white-color);
+}
+
+.subscribe-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 14px 40px;
+    width: 172px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.subscribe-button:hover {
+    background-color: var(--hover-background-color-btn);
+    color: var(--accent-color);
+    transition: var(--trans);
+}
