@@ -86,7 +86,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
     z-index: 20;
-    transition: .3s all;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-modal.active,
