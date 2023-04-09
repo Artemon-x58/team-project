@@ -216,3 +216,12 @@ input {
     margin-right: 28px;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .reviews-item {
+    width: 360px;
+  }
+  .reviews-item:not(:last-child) {
+    margin-right: 28px;
+  }
+}
