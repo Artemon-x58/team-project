@@ -1,15 +1,5 @@
-.our-prod-title {
-  font-size: 24px;
-  line-height: 28px;
-
+.our-products-container {
   text-align: center;
-  letter-spacing: -0.03em;
-
-  margin-bottom: 50px;
-}
-.products-title {
-  color: var(--accent-color);
-  display: inline;
 }
 
 .our-prod-slide-list {
@@ -43,12 +33,9 @@
   margin-bottom: 8px;
 }
 .our-prod-name {
-  font-size: 18px;
-  line-height: 24px;
+  margin-bottom: 2px;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111111;
-  margin-bottom: 2px;
 }
 .our-prod-text {
   font-size: 12px;
