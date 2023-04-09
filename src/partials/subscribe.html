@@ -3,10 +3,15 @@
     <p class="subscribe-text">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you
     craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art
     that is sure to please.</p>
-    <button class="subscribe-button" type="button">Subscribe</button>
+    <button class="subscribe-button js-open-modal" data-modal="3" type="button">Subscribe</button>
 </section>
 
-<div class="subscribe-modal is-hidden">
+<div class="subscribe-modal" data-modal="3">
+    <button class="subscribe-modal-btn" type="button">
+        <svg class="subscribe-modal-btn-close js-modal-close" width="24" height="24">
+            <use href="../img/subscribe/symbol-defs.svg#icon-x-close"></use>
+        </svg>
+    </button>
     <div class="subscribe-border"></div>
     <p class="subscribe-modal-text">
         Explore our <br>
@@ -19,5 +24,6 @@
         </label>
         <button type="submit" class="subscribe-review-submit">Submit</button>
     </form>
-
 </div>
+
+<div class="overlay js-overlay-modal"></div>

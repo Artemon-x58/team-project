@@ -53,14 +53,12 @@
     transition: var(--trans);
 }
 
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 
 .subscribe-modal {
     position: fixed;
+    opacity: 0;
+    visibility: hidden;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -75,6 +73,53 @@
     padding-bottom: 40px;
     overflow: hidden;
     z-index: 15;
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+.subscribe-modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.subscribe-modal-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+
+.subscribe-modal-btn-close {
+    stroke: var(--white-color);
+    z-index: 16;
+    transition: var(--trans);
+}
+
+.subscribe-modal-btn-close:hover {
+    stroke: var(--accent-color);
+    transition: var(--trans);
 }
 
 .subscribe-border {
@@ -142,4 +187,123 @@
     background-color: var(--hover-background-color-btn);
     color: var(--accent-color);
     transition: var(--trans);
+}
+
+
+.subscribe {
+    text-align: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subscribe/subcribe-mob@2x.jpg);
+            padding: 63px 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe-tab.jpg);
+        padding: 72px 150px;
+        
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .subscribe {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url(../img/subscribe/subcribe-tab@2x.jpg);
+                padding: 72px 150px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .subscribe {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/subscribe/subcribe.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .subscribe {
+            background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url(../img/subscribe/subcribe@2x.jpg);
+        }
+    }
+}
+
+
+.subscribe-explore {
+    margin: 0 auto;
+    max-width: 291px;
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .subscribe-explore {
+        width: 378px;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+
+.subscribe-text {
+    margin: 0 auto;
+    max-width: 100%;
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .subscribe-text {
+        width: 467px;
+    }
+}
+
+.subscribe-button {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    font-family: 'Montserrat';
+    width: 128px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border-radius: 100px;
+    border-color: transparent;
+    padding: 12px 28px;
+}
+
+@media (min-width: 768px) {
+    .subscribe-button {
+        font-size: 18px;
+        line-height: 1.22;
+        width: 172px;
+        padding: 14px 40px;
+    }
+}
+
+.subscribe-button:hover {
+    color: var(--accent-color);
+    background-color: var(--hover-background-color-btn);
 }
