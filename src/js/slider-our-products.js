@@ -13,7 +13,7 @@ $('.our-products-slider').slick({
       },
     },
     {
-      breakpoint: 1158,
+      breakpoint: 1200,
       settings: {
         dots: true,
         infinite: true,
