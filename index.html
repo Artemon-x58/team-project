@@ -32,7 +32,7 @@
     />
     
     <script type="module" crossorigin src="/team-project/assets/index-99388343.js"></script>
-    <link rel="stylesheet" href="/team-project/assets/index-7245ae7c.css">
+    <link rel="stylesheet" href="/team-project/assets/index-07906bb1.css">
   </head>
   <body>
     <header id="home" class="header">
@@ -190,22 +190,26 @@
   <h1 class="hidden">Hero Title_Simply chocolate</h1>
 
   <div class="hero-container container">
-    <h2 class="hero-subtitle">
-      Treat yourself or a loved one to our finest ingredients for a moment of
-      pure delight!
-    </h2>
-    <div class="hero-block-btn">
-      <div class="hero-buttons">
-        <button class="hero-btn" type="button">Buy now</button>
-        <a href="#how-its-made" class="hero-second-btn">How it’s made</a>
-      </div>
-      <div class="hero-scroll">
-        <p class="hero-scroll-text">scroll down</p>
-        <a href="#footer-scroll" class="hero-scroll-btn">
-          <svg class="hero-scroll-icon" width="22px" height="22px">
-            <use href="/team-project/assets/icons-98d49725.svg#icon-vector"></use>
-          </svg>
-        </a>
+    <div class="hero-wrap">
+      <h2 class="hero-subtitle">
+        Treat yourself or a loved one to our finest ingredients for a moment of
+        pure delight!
+      </h2>
+      <div class="hero-block-btn">
+        <div class="hero-buttons">
+          <button class="hero-btn js-open-modal" type="button" data-modal="2">
+            Buy now
+          </button>
+          <a href="#how-its-made" class="hero-second-btn">How it’s made</a>
+        </div>
+        <div class="hero-scroll">
+          <p class="hero-scroll-text">scroll down</p>
+          <a href="#footer-scroll" class="hero-scroll-btn">
+            <svg class="hero-scroll-icon" width="22px" height="22px">
+              <use href="/team-project/assets/icons-98d49725.svg#icon-vector"></use>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -420,7 +424,7 @@
 
 <section class="how-its-made section">
   <div class="container">
-    <h2 class="how-made-title">
+    <h2 class="how-made-title" id="how-its-made">
       How it's<span class="how-made-colorful">made?</span>
     </h2>
     <div class="how-made-section">
@@ -477,7 +481,7 @@
 
       <section class="section">
   <div class="our-products-container container">
-    <h2 class="title">OUR&nbsp;<span>PRODUCTS</span></h2>
+    <h2 class="title" id="our-product">OUR&nbsp;<span>PRODUCTS</span></h2>
     <div class="our-products-slider our-prod-slide-list">
       <div class="our-prod-slide-item">
         <img
@@ -573,7 +577,7 @@
 
       <section class="top-sellers">
   <div class="container">
-    <h2 class="title-top-seller">
+    <h2 class="title-top-seller" id="top-sellers">
       <span class="title-span-sellers">top</span> sellers
     </h2>
     <ul class="top-sellers-list">
@@ -796,7 +800,9 @@
 
       <section class="reviews-section section">
   <div class="reviews-container container">
-    <h2 class="title"><span>chocolate&nbsp;</span>is loved</h2>
+    <h2 class="title" id="chocolate-is-loved">
+      <span>chocolate&nbsp;</span>is loved
+    </h2>
     <div class="reviews-list reviews-slider">
       <div class="reviews-item">
         <div class="reviews-guests">
@@ -1109,19 +1115,19 @@
     </div>
     <ul class="footer-page-nav-list">
       <li class="footer-page-nav-item">
-        <a class="footer-page-nav-link" href="#Home">Home</a>
+        <a class="footer-page-nav-link" href="#home">Home</a>
       </li>
       <li class="footer-page-nav-item">
-        <a class="footer-page-nav-link" href="#Howit’smade?">How it’s made?</a>
+        <a class="footer-page-nav-link" href="#how-its-made">How it’s made?</a>
       </li>
       <li class="footer-page-nav-item">
-        <a class="footer-page-nav-link" href="#Our products">Our products</a>
+        <a class="footer-page-nav-link" href="#our-product">Our products</a>
       </li>
       <li class="footer-page-nav-item">
-        <a class="footer-page-nav-link" href="#Topsellers">Top sellers</a>
+        <a class="footer-page-nav-link" href="#top-sellers">Top sellers</a>
       </li>
       <li class="footer-page-nav-item">
-        <a class="footer-page-nav-link" href="#Chocolateisloved"
+        <a class="footer-page-nav-link" href="#chocolate-is-loved"
           >Chocolate is loved</a
         >
       </li>
