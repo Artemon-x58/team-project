@@ -11,7 +11,12 @@
 
 .adv-color-wallp {
   background-color: var(--background-color);
-  padding: 20px;
+  /* padding: 20px; */
+}
+
+.advantages-main {
+  margin-top: 71px;
+  background-color: var(--background-color);
 }
 
 /* СВГ */
@@ -96,7 +101,7 @@
   /* ОТСТУП ОТ ВЕРХНЕЙ ГРАНИЦЫ */
 
   .adv-points-list {
-    padding-top: 78px;
+    padding-top: 51px;
   }
 
   /* УБИРАЕМ ОТСТУП ВНУТРИ СПИСКА*/
@@ -114,6 +119,15 @@
   .adv-linie {
     visibility: hidden;
   }
+
+  .advantages-main {
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  .section {
+    padding-bottom: 0;
+  }
 }
 
 /* МЕДИА ПРАВИЛО ДЛЯ ДЕСКТОПА...............................................................................*/
@@ -121,7 +135,7 @@
 @media only screen and (min-width: 1200px) {
   .adv-points-list {
     padding-top: 50px;
-    margin-left: 70px;
+    margin-left: 18px;
     position: relative;
   }
 
@@ -140,5 +154,21 @@
     top: 50%;
     transform: translateY(-50%);
     visibility: inherit;
+  }
+
+  .advantages-main {
+    margin-top: 72px;
+    margin-bottom: 128px;
+  }
+  .adv-points-list:nth-child(even) {
+    margin-left: 70px;
+  }
+
+  .adv-points-list:last-child {
+    margin-left: 70px;
+  }
+
+  .adv-box-transportation {
+    justify-content: space-between;
   }
 }
