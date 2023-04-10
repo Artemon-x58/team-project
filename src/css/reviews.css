@@ -2,8 +2,11 @@
   text-align: center;
 }
 
-.title {
+.reviews-title {
   margin-bottom: 32px;
+}
+
+.title {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
@@ -233,8 +236,13 @@ input {
     max-width: 768px;
   }
 
-  .title {
+  .reviews-title {
     margin-bottom: 50px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
   }
 
   .reviews-item {
@@ -266,3 +274,9 @@ input {
     margin-left: 28px;
   }
 }
+
+/* .mob-contacts {
+  margin-top: auto;
+  text-decoration: none;
+  font-style: normal;
+} */
