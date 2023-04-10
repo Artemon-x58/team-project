@@ -83,14 +83,6 @@
   color: transparent;
 }
 
-.slick-dots li.slick-active button:before {
-  left: -60%;
-  width: 28px;
-  height: 13px;
-  border-radius: 6.5px;
-  color: var(--accent-color);
-}
-
 .slick-dotted.slick-slider {
   margin-bottom: 10px;
 }
@@ -238,6 +230,12 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 768px;
+  }
+
   .title {
     margin-bottom: 50px;
   }
@@ -260,6 +258,10 @@ input {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
   .reviews-item {
     width: calc(100%-56px) / 3;
   }
