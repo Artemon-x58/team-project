@@ -1,5 +1,9 @@
 .hero-section {
-  max-width: 375px;
+}
+
+.hero-container {
+  padding-top: 395px;
+  max-width: 335px;
   height: 621px;
   margin: 0 auto;
 
@@ -18,7 +22,7 @@
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
   screen and (min-resolution: 192dpi) and (max-width: 767px),
   screen and (min-resolution: 2dppx) and (max-width: 767px) {
-  .hero-section {
+  .hero-container {
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -26,10 +30,6 @@
       ),
       url(../img/hero-dc/hero_chocolate_mob@2x.jpg);
   }
-}
-
-.hero-container {
-  padding-top: 395px;
 }
 .hero-subtitle {
   width: 290px;
@@ -147,6 +147,10 @@
 
 @media screen and (min-width: 768px) {
   .hero-section {
+  }
+
+  .hero-container {
+    padding-top: 671px;
     max-width: 100%;
     height: 890px;
     margin: 0 auto;
@@ -165,7 +169,7 @@
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .hero-section {
+    .hero-container {
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
@@ -173,10 +177,6 @@
         ),
         url(../img/hero-dc/hero_chocolate_tab@2x.jpg);
     }
-  }
-
-  .hero-container {
-    padding-top: 671px;
   }
   .hero-subtitle {
     width: 484px;
@@ -233,10 +233,12 @@
 
 @media screen and (min-width: 1200px) {
   .hero-section {
-    max-width: 1200px;
+    /* max-width: 1200px;
     height: 600px;
-    margin: 0 auto;
-
+    margin: 0 auto; */
+  }
+  .hero-container {
+    /* padding: 381px 40px 40px; */
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -251,7 +253,7 @@
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
     screen and (min-resolution: 192dpi) and (min-width: 1200px),
     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-    .hero-section {
+    .hero-container {
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
@@ -260,8 +262,6 @@
         url(../img/hero-dc/hero_chocolate_desc@2x.jpg);
     }
   }
-
-  .hero-container {
-    padding-top: 381px;
+  .hero-wrap {
   }
 }

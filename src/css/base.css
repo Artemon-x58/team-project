@@ -45,15 +45,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   background-color: var(--boody-bg);
   color: var(--main-color);
 }
-/* body .active {
-  overflow: hidden;
-} */
 
 .container {
   padding-left: 20px;
