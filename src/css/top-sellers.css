@@ -1,21 +1,8 @@
-.top-sellers {
-  padding-bottom: 40px;
-}
-
 .title-top-seller {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-
-  /* or 120% */
   text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
   margin-bottom: 32px;
 }
-.title-span-sellers {
-  color: var(--accent-color);
-}
+
 .ts-img {
   border-radius: 15px;
 }
@@ -23,6 +10,7 @@
   margin: 0 auto;
   margin-bottom: 20px;
 }
+
 .top-sellers-item-hidden {
   visibility: hidden;
   margin-top: 0px;
@@ -30,21 +18,19 @@
   height: 0px;
   width: 0px;
 }
+
 .top-seller-discription {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  line-height: 11, 29;
   letter-spacing: -0.02em;
-  color: var(--main-color);
 }
+
 .top-sellers-block {
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 32px;
 }
 .buy-top-sellers {
+  display: flex;
   margin: 0 auto;
   margin-top: 0px;
   padding: 12px 28px;
@@ -53,9 +39,7 @@
   background: var(--accent-color);
   border: none;
   border-radius: 100px;
-
   font-weight: 600;
-  font-size: 14x;
   line-height: 1.21;
   color: var(--white-color);
   transition: color var(--trans), background-color var(--trans);
@@ -68,13 +52,10 @@
 }
 /* модальное окно */
 .modal-top-sellers {
-  /* display: block; */
   position: relative;
-
   margin: 0 auto;
   padding: 24px 32px;
   width: 311px;
-  /* min-height: 994px; */
   background: var(--boody-bg);
   border-radius: 15px;
 }
@@ -83,15 +64,13 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* width: 24px;
-height: 24px; */
-  /* padding: 4px; */
   right: 14px;
   top: 14px;
   background: transparent;
   border: none;
   cursor: pointer;
 }
+
 .close-modal-buynow {
   stroke: black;
   fill: var(--main-color);
@@ -100,11 +79,9 @@ height: 24px; */
   display: block;
   margin-top: 18px;
   margin-bottom: 8px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   color: #000000;
 }
@@ -114,7 +91,7 @@ height: 24px; */
   align-items: center;
   padding: 8px 16px;
   margin-bottom: 8px;
-  background: #ffffff;
+  background: var(--white-color);
   width: 100%;
   height: 85px;
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -127,16 +104,11 @@ height: 24px; */
   padding: 6px 16px;
   min-width: 70px;
   height: 29px;
-  /* gap: 14px; */
-  background: #fafafa;
+  background: var(--boody-bg);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: var(--main-color);
+  line-height: 1.21;
 }
 .modal-top-sellers-list {
   margin-bottom: 32px;
@@ -150,7 +122,6 @@ height: 24px; */
   position: relative;
   margin: 0px;
   padding: 0px;
-  /* max-width: 263px; */
 }
 .buynow-input-svg {
   display: flex;
@@ -180,11 +151,8 @@ height: 24px; */
   top: 22px;
   left: 50px;
   transform: translateY(-50%);
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   letter-spacing: -0.02em;
   color: #000000;
   height: 24px;
@@ -241,9 +209,7 @@ textarea {
   .top-sellers {
     padding-bottom: 100px;
   }
-  .title-top-seller {
-    margin-bottom: 52px;
-  }
+
   .top-sellers-list {
     display: flex;
     margin: 0 auto;
@@ -260,14 +226,9 @@ textarea {
   .top-seller-discription {
     max-width: 306px;
     text-align: left;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 18px;
-    /* or 129% */
+    line-height: 1.29;
     letter-spacing: -0.02em;
-    color: var(--main-color);
   }
   .top-sellers-block {
     margin-top: 32px;
@@ -294,16 +255,13 @@ textarea {
     gap: 14px;
     width: 162px;
     height: 50px;
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     color: var(--white-color);
   }
   .sellers-modal-open {
     position: absolute;
-    /* top:1px; */
     right: 1px;
   }
   .top-sellers-item-hidden {
@@ -312,21 +270,16 @@ textarea {
     padding: 0px;
   }
   .modal-top-sellers {
-    /* display: block; */
     position: relative;
     margin: 0 auto;
     padding: 48px;
     width: 609px;
-    /* height: 100%; */
   }
   .modal-top-sellers-close {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    /* width: 24px;
-                        height: 24px; */
-    /* padding: 4px; */
     right: 24px;
     top: 24px;
   }
@@ -348,7 +301,7 @@ textarea {
     text-align: center;
     padding: 24px 20px 8px 20px;
     margin: 0 auto;
-    background: #ffffff;
+    background: var(--white-color);
     width: 160px;
     height: 196px;
   }
@@ -380,11 +333,9 @@ textarea {
     margin-right: 21px;
   }
   .label-modal-buynow {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 1.29;
     letter-spacing: -0.02em;
     color: #000000;
   }
@@ -419,11 +370,9 @@ textarea {
     top: 33px;
     left: 74px;
     transform: translateY(-50%);
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22px;
     letter-spacing: -0.02em;
     color: #000000;
     height: 32px;
@@ -463,24 +412,16 @@ textarea {
     height: 45px;
     font-weight: 600;
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
-  /* .top-sellers-list{
-        margin: 0 auto;
-        margin: -16px;
-    } */
+
   .top-sellers-item-hidden {
     visibility: visible;
-    /* margin: 0px;
-       margin-left: 0px;
-       margin-right: 0px;
-       width: 368px; */
-    /* height: 464px; */
   }
   .top-sellers-item {
     position: relative;
@@ -490,19 +431,12 @@ textarea {
     width: 33.3%;
     height: 464px;
   }
-  .top-sellers-item:first-child {
-    /* margin-right: 16px; */
-  }
-  .top-sellers-item:nth-child(2) {
-    /* margin-left: 0px; */
-    /* margin-right: 16px; */
-  }
+
   .top-sellers-block {
     max-width: 407px;
     margin-top: 32px;
   }
   .relative-block {
-    /* position: relative; */
     display: flex;
     width: 759px;
     margin-bottom: 128px;
