@@ -70,8 +70,7 @@ max-width: 311px;
 min-height: 994px;
 background: var(--body-bg);
 border-radius: 15px;
-border-style:double;
-border-color: blue;
+
 } 
 .modal-top-sellers-close{
     display: flex;
@@ -122,7 +121,7 @@ border-radius: 15px;
 padding: 6px 16px;
 min-width: 70px;
 height: 29px;
-gap: 14px;
+/* gap: 14px; */
 background: #FAFAFA;
 border: 1px solid rgba(17, 17, 17, 0.1);
 border-radius: 100px;
@@ -172,6 +171,8 @@ border-radius: 8px;
 }
 .country-code{
     position: absolute;
+    display: flex;
+    align-items: center;
     top:22px;
     left: 50px;
     transform: translateY(-50%);
@@ -180,14 +181,30 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: 17px;
-
-/* identical to box height */
-
 letter-spacing: -0.02em;
 color: #000000;
-
-
-
+height: 24px;
+padding-right:  8px;
+background: var(--body-bg);
+box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.buynow-input-svg-card{
+    display: flex;
+    position: relative;
+flex-direction: row;
+align-items: flex-start;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    padding: 14px 18px;
+width: 100%;
+height: 44px;}
+.icon-card-input{
+    position: absolute;
+    top: 22px;
+    right: 24px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 21px;  
 }
 .buynow-input{
     display: flex;
@@ -208,3 +225,280 @@ border-radius: 8px;
     height: 91px;
     resize: none;
 }
+@media screen and (min-width:768px){
+    .container{
+        max-width: 768px;
+           }
+    .top-sellers-list {
+        display: flex;
+        margin: 0 auto;
+        }
+    .top-sellers-item{
+min-height: 464px;
+    }
+    .top-sellers-item:first-child{
+        margin-left: 0px;
+    }
+    .top-sellers-item:nth-child(2){
+        margin-right: 0px;
+    }
+    .top-seller-discription{
+        max-width: 306px;
+        text-align: left;
+        font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* or 129% */
+letter-spacing: -0.02em;
+color: var(--main-color);
+    }
+    .top-sellers-block{
+        margin: 0px;
+        max-width: 306px;
+        margin-top: 32px;
+    }
+    .sellers-tab-item{
+        position: relative;
+        /* margin-right: -16px; */
+    }
+    .relative-block{
+        /* position: relative; */
+        display: flex;
+        max-width: 306px;
+           }
+           .buy-top-sellers{
+            display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0 auto;
+        margin-top: 0px;
+        padding: 14px 40px;
+        gap: 14px;
+        width: 162px;
+        height: 50px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+line-height: 22px;
+        color:var(--white-color);
+        }
+    .sellers-modal-open{
+        position: absolute;
+       /* top:1px; */
+       right:1px;
+            }
+            .top-sellers-item-hidden  {
+                margin-left: 0px;
+                margin-right: 0px;
+                padding: 0px;
+            }
+            .modal-top-sellers{
+                /* display: block; */
+                position: relative;
+                margin: 0 auto;
+                padding: 48px;
+            max-width: 609px;
+            min-height:1058px;
+                        } 
+.modal-top-sellers-close{
+ display: flex;
+justify-content: center;
+ align-items: center;
+position: absolute;
+                        /* width: 24px;
+                        height: 24px; */
+                        /* padding: 4px; */
+                        right: 24px;
+                        top: 24px;
+}
+.modal-top-sellers-list{
+    display: flex;
+    margin: 0 auto;
+    padding: 0px;
+    margin-bottom: 40px;
+   }
+.modal-top-sellers-item{
+    margin-right: 16px;
+    }
+.modal-top-sellers-item:last-child{
+    margin-right: 0px;
+}
+.modal-buynow-input{
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 24px 20px 8px 20px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    width: 160px;
+height: 196px;
+}
+.img-modal-buynow{
+    width: 120px;
+    height: 107px;
+    margin-bottom: 14px;
+}
+.modal-buynow-discription{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 16px;
+min-width: 96px;
+height: 33px;
+}
+.top-sellers-susername{
+    display: flex;
+    margin: 0 auto;
+    padding: 0px;
+}
+.susername-buynow{
+    min-width: 246px;
+    
+}
+.margin-buynow{
+    min-width: 246px;
+   
+}
+.margin-buynow{
+    margin-right: 21px;
+}
+.label-modal-buynow{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: -0.02em;
+color: #000000;
+}
+.buynow-input{
+    margin: 0 auto;
+    width: 100%;
+    height: 66px;
+
+}
+.buynow-input-svg{
+display: flex;
+    position: relative;
+flex-direction: row;
+align-items: flex-start;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    padding: 24px 20px 24px 177px;
+width: 100%;
+height: 66px;
+}
+.icon-tel-input{
+    position: absolute;
+    top: 33px;
+    left: 24px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+}
+.country-code{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top:33px;
+    left: 74px;
+    transform: translateY(-50%);
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+letter-spacing: -0.02em;
+color: #000000;
+height: 32px;
+padding-right:  20px;
+background: var(--body-bg);
+box-shadow: 2.72246px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.buynow-input-svg-card{
+    display: flex;
+    position: relative;
+flex-direction: row;
+align-items: flex-start;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    padding: 24px 20px 24px 20px;
+width: 100%;
+height: 66px;}
+.icon-card-input{
+    position: absolute;
+    top: 33px;
+    right: 24px;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 30px;  
+}
+.buynow-comment {
+    width: 100%;
+    height: 137px;
+    resize: none;
+}
+.modal-submit{
+    margin-left:0px;
+    margin-top: 18px;
+    padding: 14px 40px;
+    width: 133px;
+    height: 45px;
+    font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+}
+}
+@media screen and (min-width:1200px) {
+    .container{
+        max-width: 1200px;
+    }
+    /* .top-sellers-list{
+        margin: 0 auto;
+        margin: -16px;
+    } */
+    .top-sellers-item-hidden{
+       visibility: visible;
+        /* margin: 0px;
+       margin-left: 0px;
+       margin-right: 0px;
+       width: 368px; */
+       /* height: 464px; */
+        }
+    .top-sellers-item{
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        padding: 0px;
+         width: 33.3%;
+        height: 464px;
+       
+    }
+    .top-sellers-item:first-child{
+        /* margin-right: 16px; */
+    }
+    .top-sellers-item:nth-child(2){
+        /* margin-left: 0px; */
+        /* margin-right: 16px; */
+    }
+    .top-sellers-block{
+        max-width: 407px;
+        margin-top: 32px;
+    }
+    .relative-block{
+        /* position: relative; */
+        display: flex;
+        width: 759px;
+        margin-bottom: 128px;
+           }
+           .sellers-modal-open{
+            left: 579px;
+           }
+           .modal-top-sellers{
+            margin-top: 50px;
+           }
+    } 
+    
