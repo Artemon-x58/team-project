@@ -11,6 +11,7 @@
     url(../img/hero-dc/hero_chocolate_mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: var(--white-color);
   border-radius: 30px;
 }
@@ -32,7 +33,7 @@
 }
 .hero-subtitle {
   width: 290px;
-  height: 72px;
+
   margin-bottom: 32px;
 
   font-weight: 500;
@@ -47,9 +48,11 @@
   align-items: center;
   gap: 14px;
 
-  margin-bottom: 39px;
+  margin-bottom: 32px;
 }
 .hero-btn {
+  transition: background-color var(--trans), color var(--trans);
+
   width: 120px;
   height: 41px;
 
@@ -59,10 +62,21 @@
 
   color: var(--white-color);
   background: var(--accent-color);
-  border: 1px solid var(--accent-color);
   border-radius: 100px;
+  border-color: transparent;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #fcf1e0;
+  color: var(--accent-color);
 }
 .hero-second-btn {
+  transition: border-color var(--trans), background-color var(--trans),
+    color var(--trans);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 159px;
   height: 41px;
 
@@ -71,16 +85,26 @@
   line-height: 1.21px;
 
   color: var(--white-color);
+  border: transparent;
   border: 1px solid var(--white-color);
   border-radius: 100px;
   background: transparent;
 }
+.hero-second-btn:hover,
+.hero-second-btn:focus {
+  border-color: var(--accent-color);
+  background-color: var(--white-color);
+  color: var(--accent-color);
+}
+
 .hero-scroll {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 .hero-scroll-text {
+  transition: color var(--trans);
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
@@ -88,18 +112,35 @@
 
   color: var(--white-color);
 }
+.hero-scroll:hover .hero-scroll-text,
+.hero-scroll:focus .hero-scroll-text {
+  color: var(--accent-color);
+}
+.hero-scroll:hover .hero-scroll-btn,
+.hero-scroll:focus .hero-scroll-btn {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.hero-scroll:hover .hero-scroll-icon,
+.hero-scroll:focus .hero-scroll-icon {
+  fill: var(--white-color);
+}
+
 .hero-scroll-btn {
+  transition: background-color var(--trans);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 28px;
   height: 28px;
 
+  background-color: var(--white-color);
   border-radius: 50%;
-  border: 1px solid var(--white-color);
 }
+
 .hero-scroll-icon {
   fill: var(--accent-color);
+  transition: fill var(--trans);
 }
 
 @media screen and (min-width: 768px) {
@@ -151,7 +192,6 @@
 
     margin-left: 8px;
     margin-right: 8px;
-    margin-bottom: 40px;
   }
 
   .hero-buttons {
@@ -186,7 +226,6 @@
     height: 38px;
 
     border-radius: 50%;
-    border: 1px solid var(--white-color);
   }
 }
 
