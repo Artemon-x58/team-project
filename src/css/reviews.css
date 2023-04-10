@@ -224,6 +224,9 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 100px;
+  }
   .container {
     padding-left: 32px;
     padding-right: 32px;

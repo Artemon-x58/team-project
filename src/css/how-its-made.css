@@ -75,6 +75,10 @@
   border-color: #4c4c4c;
 }
 @media screen and (min-width: 768px) {
+  .how-its-made.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .how-made-title {
     margin-bottom: 50px;
     padding-top: 100px;

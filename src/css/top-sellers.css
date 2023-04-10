@@ -1,9 +1,11 @@
+.top-sellers {
+  padding-bottom: 40px;
+}
+
 .title-top-seller {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
 
   /* or 120% */
   text-align: center;
@@ -43,24 +45,26 @@
   margin-bottom: 32px;
 }
 .buy-top-sellers {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   margin: 0 auto;
   margin-top: 0px;
   padding: 12px 28px;
-  gap: 14px;
   min-width: 120px;
   height: 41px;
   background: var(--accent-color);
   border: none;
   border-radius: 100px;
-  font-family: 'Montserrat';
-  font-style: normal;
+
   font-weight: 600;
   font-size: 14x;
-  line-height: 17px;
+  line-height: 1.21;
   color: var(--white-color);
+  transition: color var(--trans), background-color var(--trans);
+}
+
+.buy-top-sellers:hover,
+.buy-top-sellers:focus {
+  background-color: var(--hover-background-color-btn);
+  color: var(--accent-color);
 }
 /* модальное окно */
 .modal-top-sellers {
@@ -234,6 +238,12 @@ textarea {
   .container {
     max-width: 768px;
   }
+  .top-sellers {
+    padding-bottom: 100px;
+  }
+  .title-top-seller {
+    margin-bottom: 52px;
+  }
   .top-sellers-list {
     display: flex;
     margin: 0 auto;
@@ -260,9 +270,10 @@ textarea {
     color: var(--main-color);
   }
   .top-sellers-block {
-    margin: 0px;
-    max-width: 306px;
     margin-top: 32px;
+
+    max-width: 306px;
+    /* margin-top: 32px; */
   }
   .sellers-tab-item {
     position: relative;
