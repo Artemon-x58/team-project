@@ -260,6 +260,14 @@ input {
     margin-top: 50px;
     padding: 14px 40px;
   }
+
+  .reviews-mobil {
+    display: none;
+  }
+
+  .reviews-tablet {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -274,9 +282,3 @@ input {
     margin-left: 28px;
   }
 }
-
-/* .mob-contacts {
-  margin-top: auto;
-  text-decoration: none;
-  font-style: normal;
-} */
