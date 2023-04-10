@@ -1,23 +1,76 @@
 <section class="top-sellers container">
     <h2 class="title-top-seller"><span class="title-span-sellers">top</span> sellers</h2>
-    <ul class="top-sellers-list">
+    <ul class="top-sellers-list ">
         <li class="top-sellers-item">
-<img src="./img/top-sellers/image.jpg" alt="chocolate">
+            <picture>
+            <source srcset="../img/top-sellers/img02-desk.jpg 1x, ../img/top-sellers/img02-desk@2x.jpg 2x"
+            media="(min-width:1200px)"
+            />
+            <!-- <source
+             media="(min-width:768px)"
+             srcset="
+              ./images/team/tablet/image.jpg    1x,
+              ./images/team/tablet/image@2x.jpg 2x
+             "
+            /> -->
+            <img             
+             src="../img/top-sellers/img02.jpg"
+             alt="chocolate"
+             loading="lazy"
+            />
+           </picture>
+
 <div class="top-sellers-block"><p class="top-sellers-discription">
     Crazy enough chocolate originates from a bean just like the coffee bean called Cacao. 
     Cacao has been around for thousands of years and was first discovered by the Native American tribe called the Mayans.
 </p></div>
         </li>
-        <li class="top-sellers-item">
-            <img src="./img/top-sellers/img02.jpg" alt="chocolate">
+        <li class="top-sellers-item sellers-tab-item">
+            <picture>
+            <source srcset="../img/top-sellers/img-desk.jpg 1x, ../img/top-sellers/img-desk@2x.jpg 2x"
+            media="(min-width:1200px)"
+            />
+            <!-- <source
+             media="(min-width:768px)"
+             srcset="
+              ./images/team/tablet/image.jpg    1x,
+              ./images/team/tablet/image@2x.jpg 2x
+             "
+            /> -->
+            <img             
+             src="../img/top-sellers/image.jpg"
+             alt="chocolate"
+             loading="lazy"
+            />
+           </picture>
+                        <div class="top-sellers-block relative-block">
+                <button type="button" class="buy-top-sellers sellers-modal-open">
+                    Buy now
+                </button>
+            </div>
         </li>
-        <li class="top-sellers-item top-sellers-item-hidden"> 
-            <img src="../img/top-sellers/img01.jpg" alt="chocolate">
+        <li class="top-sellers-item top-sellers-item-hidden">
+            <picture>
+                <source srcset="../img/top-sellers/img01.jpg 1x, ../img/top-sellers/img01@2x.jpg 2x"
+                media="(min-width:1200px)"
+                />
+                <!-- <source
+                 media="(min-width:768px)"
+                 srcset="
+                  ./images/team/tablet/image.jpg    1x,
+                  ./images/team/tablet/image@2x.jpg 2x
+                 "
+                /> -->
+                <img             
+                 src="../img/top-sellers/img01.jpg"
+                 alt="chocolate"
+                 loading="lazy"
+                />
+               </picture>
+            
         </li>
     </ul>
-    <button type="button" class="buy-top-sellers">
-        Buy now
-    </button>
+    
 </section>
 
 <!-- модальное окно -->
@@ -50,13 +103,13 @@
         <form>
             <label class="label-modal-buynow" for="name">
                 Personal information
-            </label>
-            <div class="input-box-buynow">
+            </label><div class="top-sellers-susername">
+            <div class="input-box-buynow margin-buynow">
                 <input id="name" class="buynow-input" type="text" name="name" placeholder="Name">
             </div>
-            <div class="input-box-buynow">
+            <div class="input-box-buynow susername-buynow">
                 <input id="surname" class="buynow-input" type="text" name="surname" placeholder="Surname">
-            </div>
+            </div></div>
             <label class="label-modal-buynow" for="email">
                 Email
             </label>
@@ -67,19 +120,23 @@
                 Phone number
             </label>
             <div class="input-box-buynow">
-                <input id="tel" class="buynow-input-svg" type="tel" name="tel" placeholder="Phone number">
+                <input id="tel" class="buynow-input-svg input-box-buynow" type="tel" name="tel" placeholder="Phone number">
            <svg class="icon-tel-input" width="24" height="18">
             <use href="./img/icons/icons.svg#icon-flag" ></use>
 
            </svg>
-           <p class="country-code">+380</p>
+           <div class="country-code">+380</div>
                 </div>
             
             <label class="label-modal-buynow" for="card">
                 Card number
             </label>
-            <div class="input-box-buynow">
-                <input id="card" class="buynow-input" type="number" name="card" placeholder="Enter card">
+            <div class="input-box-buynow ">
+                <input id="card" class="buynow-input buynow-input-svg-card" type="text" name="card" placeholder="Enter card">
+                <svg class="icon-card-input" width="24" height="18">
+                    <use href="./img/icons/icons.svg#icon-mastercard-2" ></use>
+        
+                   </svg>
             </div>
             <label class="label-modal-buynow" for="comment">
                 Comment
