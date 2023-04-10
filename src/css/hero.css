@@ -105,6 +105,8 @@
 .hero-scroll-text {
   transition: color var(--trans);
 
+  cursor: pointer;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 1.17;
