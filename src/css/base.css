@@ -51,6 +51,9 @@ body {
   background-color: var(--boody-bg);
   color: var(--main-color);
 }
+/* body .active {
+  overflow: hidden;
+} */
 
 .container {
   padding-left: 20px;
