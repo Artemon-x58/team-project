@@ -26,7 +26,6 @@
 .how-made-list-background {
   background: #ffffff;
   border-radius: 15px;
-  min-width: 335px;
   text-align: center;
   justify-content: center;
 }
@@ -155,7 +154,6 @@
   margin-bottom: 20px;
 }
 .video {
-  width: 335px;
   height: 500px;
   position: relative;
   overflow: hidden;
