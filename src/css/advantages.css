@@ -11,26 +11,29 @@
 
 .adv-color-wallp {
   background-color: var(--background-color);
-  /* padding: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .advantages-main {
-  margin-top: 71px;
   background-color: var(--background-color);
+  padding-bottom: 0;
 }
 
 /* СВГ */
 
 .adv-points-list {
-  padding-top: 22px;
+}
+.adv-points-list:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .adv-cirkle {
   /* ФОРМА ЦВЕТ РАЗМЕР */
 
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  width: 62px;
+  height: 62px;
   border: 1px solid rgb(255, 255, 255, 0.7);
   background-color: var(--background-color);
 
@@ -77,7 +80,6 @@
 }
 
 .adv-text:last-child {
-  padding-bottom: 36px;
 }
 
 .adv-linie {
@@ -100,39 +102,33 @@
 
   /* ОТСТУП ОТ ВЕРХНЕЙ ГРАНИЦЫ */
 
-  .adv-points-list {
-    padding-top: 51px;
-  }
-
   /* УБИРАЕМ ОТСТУП ВНУТРИ СПИСКА*/
 
   .adv-points-list:last-child {
     padding-top: 0;
+    padding-bottom: 35px;
   }
 
   /* ДЕЛАЕМ НИЖНИЙ ОТСТУП ДЛЯ НИЖНЕГО ЭЛЕМЕНТА */
 
-  .adv-text:last-child {
-    padding-bottom: 85px;
-  }
-
   .adv-linie {
     visibility: hidden;
-  }
-
-  .advantages-main {
-    margin-top: 50px;
-    margin-bottom: 100px;
   }
 
   .section {
     padding-bottom: 0;
   }
 }
+.adv-color-wallp {
+  padding: 50px 32px;
+}
 
 /* МЕДИА ПРАВИЛО ДЛЯ ДЕСКТОПА...............................................................................*/
 
 @media only screen and (min-width: 1200px) {
+  .adv-color-wallp {
+    padding: 50px;
+  }
   .adv-points-list {
     padding-top: 50px;
     margin-left: 18px;
@@ -166,9 +162,5 @@
 
   .adv-points-list:last-child {
     margin-left: 70px;
-  }
-
-  .adv-box-transportation {
-    justify-content: space-between;
   }
 }
