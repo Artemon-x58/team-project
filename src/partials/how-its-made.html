@@ -2,26 +2,26 @@
 
 <section class="how-its-made section">
   <div class="container">
-    <h2 class="how-made-title">
+    <h2 class="how-made-title" id="how-its-made">
       How it's<span class="how-made-colorful">made?</span>
     </h2>
     <div class="how-made-section">
       <div class="how-made-space">
         <div class="page">
           <div class="video">
-            <div class="video__overlay js-video-btn"></div>
+            <div class="video__overlay js-video-btn">
+              <svg class="video-icon" width="35" height="35">
+                <use href="./img/icons/icons.svg#icon-play"></use>
+              </svg>
+            </div>
 
             <video
               class="video-mobile js-video"
-              src="../img/how-its-made-img/schokovid2.mp4"
-              poster="../img/how-its-made-img/how-its-made-desk@1.jpg"
+              src="./img/how-its-made-img/schokovid2.mp4"
+              poster="./img/how-its-made-img/how-its-made-desk@1.jpg"
               muted
               preload="auto"
             ></video>
-
-            <!-- <video class="js-video" muted>
-              <source src="../img/how-its-made-img/schokovid2.mp4" />
-            </video> -->
           </div>
         </div>
 
@@ -55,5 +55,4 @@
       </div>
     </div>
   </div>
-  <script src="../js/app.js"></script>
 </section>

@@ -117,18 +117,12 @@
   position: relative;
   margin: 0 auto;
   padding: 32px 24px;
-  max-width: 311px;
+  width: 311px;
   height: 100hw;
   border-radius: 15px;
-  background-color: var(--white-color);
-  /* background-color: var(--boody-bg); */
-}
 
-/* .is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-} */
+  background-color: var(--boody-bg);
+}
 
 .reviews-close-btn {
   position: absolute;
@@ -233,6 +227,9 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .reviews-section {
+    padding-bottom: 100px;
+  }
   .container {
     padding-left: 32px;
     padding-right: 32px;
