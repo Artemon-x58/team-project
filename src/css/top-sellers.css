@@ -52,6 +52,8 @@
 }
 /* модальное окно */
 .modal-top-sellers {
+  height: 90%;
+  overflow: auto;
   position: relative;
   margin: 0 auto;
   padding: 24px 32px;
