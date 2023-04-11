@@ -421,10 +421,9 @@ textarea {
   }
 }
 @media screen and (min-width: 1200px) {
-  .unq-section.section {
-    padding-bottom: 128px;
+  .top-sellers-section {
+    padding-bottom: 100px;
   }
-
   .container {
     max-width: 1200px;
   }

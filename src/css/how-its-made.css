@@ -76,7 +76,7 @@
 }
 @media screen and (min-width: 768px) {
   .how-its-made.section {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     padding-bottom: 100px;
   }
   .how-made-title {
@@ -123,7 +123,7 @@
     isolation: isolate;
     max-height: 400px;
     max-width: 1136px;
-    margin-bottom: 128px;
+    padding-bottom: 0;
   }
 
   .how-made-title {
