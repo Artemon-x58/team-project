@@ -77,12 +77,22 @@
   letter-spacing: -0.02em;
   color: #ffffff;
   flex-direction: column;
+  transition: color var(--trans);
+}
+.footer-page-nav-link:hover,
+.footer-page-nav-link:focus {
+  color: var(--accent-color);
 }
 
 .footer-social-services-icon {
-  stroke: #ffffff;
+  stroke: var(--white-color);
   margin-top: 0;
-  fill: #1e1823;
+  transition: stroke var(--trans);
+}
+
+.footer-social-services-icon:hover,
+.footer-social-services-icon:focus {
+  stroke: var(--accent-color);
 }
 
 .footer-social-services-list {

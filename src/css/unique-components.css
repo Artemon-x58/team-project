@@ -106,11 +106,24 @@
 .btn-comp {
   background: var(--accent-color);
   color: var(--white-color);
+  transition: background-color var(--trans), color var(--trans);
+}
+.btn-comp:hover,
+.btn-comp:focus {
+  background-color: var(--hover-background-color-btn);
+  color: var(--accent-color);
 }
 
 .btn-bene {
   background: var(--boody-bg);
   color: var(--main-color);
+  transition: background-color var(--trans), color var(--trans);
+}
+.btn-bene:hover,
+.btn-bene:focus {
+  background-color: var(--background-color);
+  color: var(--accent-color);
+  border-color: transparent;
 }
 
 .unq-anim-text {
