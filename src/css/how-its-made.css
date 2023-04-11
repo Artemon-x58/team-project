@@ -220,6 +220,10 @@ video {
 /* **************************DESKTOP************************************ */
 
 @media only screen and (min-width: 1200px) {
+  .how-its-made.section {
+    padding-bottom: 128px;
+  }
+
   .how-made-list-background {
     margin-top: 0;
     height: 400px;

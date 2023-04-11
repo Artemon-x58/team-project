@@ -294,6 +294,10 @@ input {
 }
 
 @media screen and (min-width: 1200px) {
+  .reviews-section {
+    padding-top: 100px;
+    padding-bottom: 128px;
+  }
   .container {
     max-width: 1200px;
   }

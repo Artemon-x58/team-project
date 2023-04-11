@@ -212,6 +212,9 @@ textarea {
   .container {
     max-width: 768px;
   }
+  .title-top-seller {
+    margin-bottom: 50px;
+  }
   .top-sellers {
     padding-bottom: 100px;
   }
