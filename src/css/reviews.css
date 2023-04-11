@@ -225,10 +225,16 @@ input {
   border: none;
   cursor: pointer;
 }
-
+.bad-teg {
+  display: none;
+}
 @media screen and (min-width: 768px) {
+  .bad-teg {
+    display: inline;
+  }
   .reviews-section {
     padding-bottom: 100px;
+    padding-top: 100px;
   }
   .container {
     padding-left: 32px;
@@ -267,6 +273,23 @@ input {
 
   .reviews-tablet {
     display: block;
+  }
+  .reviews-modal {
+    width: 511px;
+    padding: 40px;
+  }
+  .reviews-modal-title {
+    max-width: 302px;
+    margin-bottom: 40px;
+  }
+  .reviews-modal-wrap {
+    margin-bottom: 19px;
+  }
+  .modal-tel {
+  }
+  .reviews-submit-modal-btn {
+    padding: 14px 40px;
+    min-width: 117px;
   }
 }
 

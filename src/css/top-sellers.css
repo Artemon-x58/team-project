@@ -203,6 +203,10 @@ textarea {
   resize: none;
 }
 @media screen and (min-width: 768px) {
+  .unq-section.section {
+    padding-bottom: 100px;
+  }
+
   .container {
     max-width: 768px;
   }
@@ -216,6 +220,7 @@ textarea {
   }
   .top-sellers-item {
     min-height: 464px;
+    margin-bottom: 0;
   }
   .top-sellers-item:first-child {
     margin-left: 0px;
@@ -416,6 +421,10 @@ textarea {
   }
 }
 @media screen and (min-width: 1200px) {
+  .unq-section.section {
+    padding-bottom: 128px;
+  }
+
   .container {
     max-width: 1200px;
   }

@@ -1,3 +1,6 @@
+.unq-section {
+  padding-top: 72px;
+}
 .unq-title {
   width: 293px;
   margin: 0 auto 24px;
@@ -121,7 +124,9 @@
     padding-right: 32px;
     max-width: 768px;
   }
-
+  .unq-section {
+    padding-top: 100px;
+  }
   .unq-title {
     width: 411px;
     margin: 0 auto 28px;
@@ -160,7 +165,10 @@
   .container {
     max-width: 1200px;
   }
-
+  .unq-section.section {
+    padding-top: 128px;
+    padding-bottom: 128px;
+  }
   .unq-list {
     display: flex;
   }
@@ -174,10 +182,10 @@
   }
 
   .unq-item {
-    width: calc((100% - 57px) / 4);   
+    width: calc((100% - 57px) / 4);
   }
 
-   .pos-one {
+  .pos-one {
     order: 1;
   }
 

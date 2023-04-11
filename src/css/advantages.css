@@ -152,10 +152,6 @@
     visibility: inherit;
   }
 
-  .advantages-main {
-    margin-top: 72px;
-    margin-bottom: 128px;
-  }
   .adv-points-list:nth-child(even) {
     margin-left: 70px;
   }

@@ -264,6 +264,10 @@
         url(../img/hero-dc/hero_chocolate_desc@2x.jpg);
     }
   }
+  .hero-container.container {
+    height: 600px;
+    padding-top: 381px;
+  }
   .hero-wrap {
   }
 }
