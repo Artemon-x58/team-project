@@ -23,6 +23,8 @@
 }
 
 .how-made-list-background {
+  padding: 20px 14px;
+
   background: #ffffff;
   border-radius: 15px;
   text-align: center;
@@ -34,17 +36,15 @@
   line-height: calc(24 / 18);
   color: #111111;
 
-  padding-top: 20px;
-  margin: 0 14px 20px;
+  margin-bottom: 20px;
   max-width: 318px;
   text-align: left;
 }
 .how-made-list {
-  padding-bottom: 72px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px 14px;
+
   gap: 18px;
 }
 .how-made-text {
@@ -56,10 +56,6 @@
   letter-spacing: -0.02em;
   color: #111111;
   text-align: left;
-}
-
-.how-made-text:last-child {
-  padding-bottom: 20px;
 }
 
 .how-made-text:before {
@@ -76,7 +72,6 @@
 }
 @media screen and (min-width: 768px) {
   .how-its-made.section {
-    /* padding-top: 100px; */
     padding-bottom: 100px;
   }
   .how-made-title {
@@ -99,7 +94,6 @@
     isolation: isolate;
   }
   .how-made-list {
-    padding-bottom: 32px;
   }
   .how-made-text:before {
     content: '';
@@ -108,9 +102,6 @@
   }
 
   .how-made-subtitle {
-    padding-top: 32px;
-    padding-bottom: 28px;
-    padding-left: 32px;
     min-width: 350px;
   }
   .how-made-list-background {
@@ -221,12 +212,8 @@ video {
     max-width: 464px;
   }
 
-  .how-made-text:last-child {
-    padding-bottom: 0;
-  }
-
-  .how-made-list {
-    padding-left: 32px;
+  .how-made-list-background {
+    padding: 32px;
   }
 }
 
@@ -235,18 +222,13 @@ video {
 @media only screen and (min-width: 1200px) {
   .how-made-list-background {
     margin-top: 0;
+    height: 400px;
   }
-
-  .how-made-list-background {
-    max-height: 400px;
+  .how-made-list {
+    gap: 24px;
   }
-
   .video {
     width: 600px;
     height: 400px;
-  }
-
-  .how-made-list {
-    padding-bottom: 38px;
   }
 }
