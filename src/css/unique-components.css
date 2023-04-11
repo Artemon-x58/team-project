@@ -1,5 +1,6 @@
 .unq-section {
   padding-top: 72px;
+  padding-bottom: 72px;
 }
 .unq-title {
   width: 293px;
@@ -139,6 +140,7 @@
   }
   .unq-section {
     padding-top: 100px;
+    padding-bottom: 100px;
   }
   .unq-title {
     width: 411px;
@@ -178,7 +180,7 @@
   .container {
     max-width: 1200px;
   }
-  .unq-section.section {
+  .unq-section {
     padding-top: 128px;
     padding-bottom: 128px;
   }

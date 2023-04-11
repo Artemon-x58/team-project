@@ -92,6 +92,7 @@
   .adv-box-transportation {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   /* ОТСТУП ВТОРОГО ЭЛЕМЕНА ВЛЕВО */
@@ -130,13 +131,8 @@
     padding: 50px;
   }
   .adv-points-list {
-    padding-top: 50px;
     margin-left: 18px;
     position: relative;
-  }
-
-  .adv-points-list:last-child {
-    padding-top: 50px;
   }
 
   /* ПОЛОСКА */
