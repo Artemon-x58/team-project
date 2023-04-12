@@ -1,17 +1,8 @@
 .how-made-title {
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
   text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  color: #111111;
   margin-bottom: 32px;
 }
-.how-made-colorful {
-  color: #fd9222;
-  margin-left: 4px;
-}
+
 .how-made-image {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
   border-radius: 15px;
@@ -31,11 +22,6 @@
   justify-content: center;
 }
 .how-made-subtitle {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: calc(24 / 18);
-  color: #111111;
-
   margin-bottom: 20px;
   max-width: 318px;
   text-align: left;
