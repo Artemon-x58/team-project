@@ -7,9 +7,8 @@
   --trans: 250ms linear;
 } */
 
-/* БАКГРАУНД */
-
-.adv-color-wallp {
+/* БАКГРАУНД advantages
+.advantages-color-wallp {
   background-color: var(--background-color);
   padding-top: 20px;
   padding-bottom: 20px;
@@ -19,17 +18,20 @@
   background-color: var(--background-color);
   padding-bottom: 0;
 }
-
+.advantages-main {
 /* СВГ */
-
-.adv-points-list {
+.advantages-main {
+  background-color: var(--background-color);
 }
 
-.adv-points-list:not(:last-child) {
+.advantages-points-list {
+}
+
+.advantages-points-list:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.adv-cirkle {
+.advantages-cirkle {
   /* ФОРМА ЦВЕТ РАЗМЕР */
 
   border-radius: 50%;
@@ -49,7 +51,7 @@
   align-items: center;
 }
 
-.adv-picture {
+.advantages-picture {
   fill: var(--accent-color);
 
   /* ЦЕНТРОВКА */
@@ -60,7 +62,7 @@
 
 /* ЗАГОЛОВОК */
 
-.adv-zagolovok {
+.advantages-zagolovok {
   color: var(--white-color);
   line-height: 1.22;
   margin-bottom: 18px;
@@ -68,7 +70,7 @@
 
 /* ТЕКСТ */
 
-.adv-text {
+.advantages-text {
   color: rgb(255, 255, 255, 0.7);
   font-size: 14px;
   line-height: 1.21;
@@ -77,17 +79,17 @@
   max-width: 308px;
 }
 
-.adv-text:last-child {
+.advantages-text:last-child {
 }
 
-.adv-linie {
+.advantages-linie {
   visibility: hidden;
 }
 
 /* МЕДИА ПРАВИЛО ДЛЯ ТАБЛЕТКИ................................................................................*/
 
 @media only screen and (min-width: 768px) {
-  .adv-box-transportation {
+  .advantages-box-transportation {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -95,7 +97,7 @@
 
   /* ОТСТУП ВТОРОГО ЭЛЕМЕНА ВЛЕВО */
 
-  .adv-points-list:nth-child(even) {
+  .advantages-points-list:nth-child(even) {
     margin-left: 60px;
   }
 
@@ -103,14 +105,14 @@
 
   /* УБИРАЕМ ОТСТУП ВНУТРИ СПИСКА*/
 
-  .adv-points-list:last-child {
+  .advantages-points-list:last-child {
     padding-top: 0;
     padding-bottom: 35px;
   }
 
   /* ДЕЛАЕМ НИЖНИЙ ОТСТУП ДЛЯ НИЖНЕГО ЭЛЕМЕНТА */
 
-  .adv-linie {
+  .advantages-linie {
     visibility: hidden;
   }
 
@@ -118,24 +120,24 @@
     padding-bottom: 0;
   }
 }
-.adv-color-wallp {
+.advantages-color-wallp {
   padding: 50px 32px;
 }
 
 /* МЕДИА ПРАВИЛО ДЛЯ ДЕСКТОПА...............................................................................*/
 
 @media only screen and (min-width: 1200px) {
-  .adv-color-wallp {
+  .advantages-color-wallp {
     padding: 50px;
   }
-  .adv-points-list {
+  .advantages-points-list {
     margin-left: 18px;
     position: relative;
   }
 
   /* ПОЛОСКА */
 
-  .adv-linie {
+  .advantages-linie {
     height: 124px;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -146,11 +148,11 @@
     visibility: inherit;
   }
 
-  .adv-points-list:nth-child(even) {
+  .advantages-points-list:nth-child(even) {
     margin-left: 70px;
   }
 
-  .adv-points-list:last-child {
+  .advantages-points-list:last-child {
     margin-left: 70px;
   }
 }
