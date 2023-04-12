@@ -148,6 +148,7 @@ input {
 }
 
 .reviews-modal-title {
+  margin-bottom: 32px;
   max-width: 255px;
   text-align: left;
   font-weight: 600;
@@ -168,7 +169,7 @@ input {
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
-  /* background-color: transparent; */
+  background-color: transparent;
 }
 
 .reviews-modal-input::placeholder {
@@ -197,11 +198,13 @@ input {
   width: 74px;
   border-right: 1.5px solid rgba(17, 17, 17, 0.05);
 }
+
 .reviews-modal-ikon-flag {
   margin-right: 8px;
   width: 24px;
   height: 24px;
 }
+
 .reviews-code-country-numeric {
   font-weight: 500;
   line-height: 1.21;
@@ -213,6 +216,7 @@ input {
   height: 91px;
   resize: none;
 }
+
 .reviews-submit-modal-btn {
   display: block;
   padding: 12px 28px;
@@ -225,13 +229,8 @@ input {
   border: none;
   cursor: pointer;
 }
-.bad-teg {
-  display: none;
-}
+
 @media screen and (min-width: 768px) {
-  .bad-teg {
-    display: inline;
-  }
   .reviews-section {
     padding-bottom: 100px;
     padding-top: 100px;
@@ -252,7 +251,7 @@ input {
   }
 
   .reviews-item {
-    width: calc(100%-16px) / 2;
+    width: (calc(100% - 16px) / 2);
   }
   .reviews-item + .reviews-item {
     margin-left: 16px;
@@ -274,19 +273,58 @@ input {
   .reviews-tablet {
     display: block;
   }
+
   .reviews-modal {
     width: 511px;
     padding: 40px;
   }
+
   .reviews-modal-title {
-    max-width: 302px;
+    max-width: 304px;
     margin-bottom: 40px;
   }
+
   .reviews-modal-wrap {
     margin-bottom: 19px;
   }
-  .modal-tel {
+
+  .reviews-modal-input {
+    padding-left: 24px;
+    height: 66px;
+    border-radius: 13px;
   }
+
+  .reviews-modal-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .modal-tel {
+    padding-left: 177px;
+  }
+
+  .reviews-code-country {
+    left: 24px;
+    width: 125px;
+  }
+
+  .reviews-modal-ikon-flag {
+    margin-right: 18px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .reviews-code-country-numeric {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .textarea {
+    padding: 22px 24px;
+    height: 137px;
+    resize: none;
+  }
+
   .reviews-submit-modal-btn {
     padding: 14px 40px;
     min-width: 117px;
@@ -307,5 +345,11 @@ input {
   }
   .reviews-item + .reviews-item {
     margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bad-teg {
+    display: none;
   }
 }
