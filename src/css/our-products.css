@@ -7,16 +7,7 @@
 
 .our-products-title {
   margin-bottom: 32px;
-
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
   text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-}
-.our-products-title-span {
-  color: var(--accent-color);
 }
 
 .our-prod-slide-list {

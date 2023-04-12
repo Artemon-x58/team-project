@@ -79,14 +79,36 @@ body {
   overflow: hidden;
 }
 
+.title {
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+.title span {
+  color: var(--accent-color);
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.33;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
+
   .section {
     padding-bottom: 128px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
